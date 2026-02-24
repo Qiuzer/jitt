@@ -3,31 +3,26 @@ layout: default
 title: "jitt 的空间"
 ---
 
-# 欢迎来到 jitt 的空间 👋
+## GitHub Pages
 
-这里是我从 X `@jitt` 长内容沉淀下来的地方。
-
-- 记录更系统、更完整的想法  
-- 把零碎的推文整理成可反复回看的文章  
-- 主要围绕 **iOS / SwiftUI / 自学 / 英语学习** 等主题
+Self-taught iOS developer improving my English by building apps with SwiftUI.
 
 ---
 
-## 最新文章
+## 文章列表
 
 {% if site.posts.size > 0 %}
 <ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span> - {{ post.date | date: "%Y-%m-%d" }}</span>
+    <span> - </span>
+    <a href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    </a>
   </li>
   {% endfor %}
 </ul>
 {% else %}
 暂时还没有文章，敬请期待。
 {% endif %}
-
----
-
-如果你是从 X 过来的，非常欢迎继续逛逛，也欢迎给仓库点个 Star 🙂
