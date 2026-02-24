@@ -1,5 +1,5 @@
-title: jitt 的空间          # 你的站点标题
-description: 从 X @jitt 来的长内容沉淀地   # 站点描述
+title: jitt's Space
+description: Self-taught iOS developer improving my English by building apps with SwiftUI.
 
 remote_theme: pages-themes/hacker@v0.2.0   # 指定 Hacker 主题 + 版本（推荐固定版本避免突然变化）
 
@@ -7,7 +7,7 @@ plugins:
   - jekyll-remote-theme   # 必须加这一行，让 GitHub 支持 remote_theme
 
 # 可选自定义（Hacker 主题支持这些变量）
-show_downloads: true      # 是否显示下载按钮（右上角）
+show_downloads: false
 google_analytics:         # 如果有 GA ID 可以加
 
 # 其他常用设置（可选）

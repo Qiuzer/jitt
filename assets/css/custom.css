@@ -1,0 +1,97 @@
+/* Hide the header download / GitHub buttons (screenshot red box). */
+#downloads {
+  display: none !important;
+}
+
+/* Improve readability across pages. */
+#main_content {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main_content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main_content p,
+#main_content li {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#main_content p {
+  margin: 0.9rem 0;
+}
+
+#main_content hr {
+  margin: 2rem 0;
+  opacity: 0.7;
+}
+
+#main_content blockquote {
+  margin: 1.2rem 0;
+  padding: 0.6rem 1rem;
+  border-left: 4px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+#main_content h1,
+#main_content h2,
+#main_content h3 {
+  line-height: 1.25;
+  margin-top: 2.2rem;
+}
+
+#main_content h2 {
+  margin-bottom: 0.9rem;
+}
+
+#main_content pre,
+#main_content code {
+  line-height: 1.6;
+}
+
+#main_content pre {
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/* Homepage post list layout. */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 1.2rem;
+}
+
+.post-list-item {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.post-list-title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.post-list-date {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .post-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
